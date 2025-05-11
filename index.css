@@ -1,0 +1,433 @@
+/* index.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: #135454;
+    background: linear-gradient(195deg, rgba(19, 84, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 60px;
+    box-shadow: rgba(199, 199, 199, 0.534) 0px 0px 7px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    margin: 10px auto;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: small;
+    background: #135454;
+    background: linear-gradient(195deg, rgba(19, 84, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: rgba(204, 204, 204, 0.363) 0px 0px 1px;
+    transform: translateY(-3px);
+}
+
+/* Featured Products Section */
+.featured-products, .newest-market {
+    padding: 40px 20px;
+}
+
+.featured-products h1, .newest-market h1 {
+    color: white;
+    margin: 7% 0% 1% 2%;
+    font-size: 2rem;
+    display: block;
+}
+
+.cards {
+    width: 97%;
+    margin: auto;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.cards::-webkit-scrollbar {
+    height: 0px;
+}
+
+.card-item {
+    width: 20%;
+    flex-shrink: 0;
+    margin: 1%;
+    background: #135454;
+    background: radial-gradient(circle, rgba(19, 84, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    box-shadow: rgba(255, 255, 255, 0) 0px 0px 7px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 230px; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card-item:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    box-shadow: rgb(255, 255, 255) 0px 0px 1px;
+    transform: translateY(-10px);
+}
+
+.card-item img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    height: 150px; 
+    object-fit: contain; 
+}
+
+.card-item p {
+    font-size: medium;
+    text-align: center;
+    color: white;
+    margin: 10px 0 0 0;
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info {
+    padding: 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin: 8px 0;
+}
+
+.product-actions .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* Categories Section */
+.categories {
+    padding: 40px 20px;
+}
+
+.categories h1 {
+    color: white;
+    margin: 7% 0% 5% 2%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.brand {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 300px;
+}
+
+.brand:nth-of-type(odd) {
+    flex-direction: row;
+}
+
+.brand:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.brand-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.brand-info {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.brand-image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.brand-image img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.brand h1 {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin: 0 0 20px 0;
+}
+
+.brand button {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: block;
+    width: 50%;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: small;
+    margin: 0 auto;
+    background: #135454;
+    background: linear-gradient(195deg, rgba(19, 84, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.brand button:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    box-shadow: rgba(204, 204, 204, 0.363) 0px 0px 1px;
+    transform: translateY(-3px);
+}
+
+#Oppo img, #Xiaomi img {
+    width: 50%;
+}
+
+#Vivo img {
+    width: 80%;
+}
+
+#Motorola img {
+    width: 60%;
+}
+
+#Oppo .brand-image {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Footer Styles */
+footer {
+    background: #135454;
+    background: linear-gradient(195deg, rgba(19, 84, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+    box-shadow: rgba(199, 199, 199, 0.534) 0px 0px 7px 0px;
+}
+
+.footer-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f8fafc;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: #c1c9d4;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #c1c9d4;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #c1c9d4;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media all and (max-width:1000px) and (min-width:699px) {
+    .brand h1 {
+        font-size: x-large;
+    }
+
+    .brand button {
+        font-size: small;
+    }
+}
+
+@media all and (max-width:800px) {
+    .newest-market h1, .featured-products h1, .categories h1 {
+        font-size: larger;
+        margin-top: 10%;
+    }
+    
+    .card-item {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand {
+        flex-direction: column !important;
+        height: auto;
+    }
+    
+    .brand-content, .brand-image {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .brand-image img {
+        max-height: 200px;
+    }
+    
+    #Oppo .brand-image {
+        flex-direction: column;
+    }
+    
+    #Oppo .brand-image img {
+        margin: 10px 0;
+    }
+}
+
+@media all and (max-width:700px) and (min-width:600px) {
+    .brand-info h1 {
+        font-size: large;
+    }
+
+    .brand button {
+        font-size: small;
+    }
+}
+
+@media all and (max-width:600px) and (min-width:500px) {
+    .brand-info h1 {
+        font-size: medium;
+    }
+
+    .brand button {
+        font-size: smaller;
+    }
+    
+    .card-item {
+        width: 45%;
+    }
+}
+
+@media all and (max-width:500px) and (min-width:400px) {
+    .brand-info h1 {
+        font-size: smaller;
+    }
+
+    .brand button {
+        font-size: x-small;
+    }
+    
+    .card-item {
+        width: 80%;
+    }
+}
+
+@media all and (max-width:400px) {
+    .brand-info h1 {
+        font-size: small;
+    }
+
+    .brand button {
+        font-size: xx-small;
+    }
+    
+    .card-item {
+        width: 85%;
+    }
+}
